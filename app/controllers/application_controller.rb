@@ -1,10 +1,10 @@
 class ApplicationController < ActionController::Base
 	def page_title
-		"Thursday Church"
+		"MVCOG"
 	end
 
 	def site_title
-		"Thursday Church"
+		"MVCOG"
 	end
 
 	def page_description
