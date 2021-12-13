@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'watch/index'
+  get 'watch/index', to "watch#index"
   root "articles#index"
   get "/about", to: "about#index"
   get "/about/team", to: "about#team"
@@ -25,6 +25,5 @@ Rails.application.routes.draw do
 
   get 'grayscale/index', to: "grayscale#index"
 
-  get 'pages/index'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
