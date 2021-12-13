@@ -1501,3 +1501,615 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 59ms (Views: 56.8ms | ActiveRecord: 0.3ms | Allocations: 7672)
 
 
+Started GET "/" for ::1 at 2021-12-10 18:53:01 -0500
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 4574)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 74d2fbdcfc14535ee926
+Version: webpack 4.46.0
+Time: 461ms
+Built at: 12/10/2021 6:53:03 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-767d66d5a0ee75a57ff3.js   7.19 KiB  application  [emitted] [immutable]  application
+js/application-767d66d5a0ee75a57ff3.js.map   3.53 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-767d66d5a0ee75a57ff3.js js/application-767d66d5a0ee75a57ff3.js.map
+[./app/javascript/packs/application.js] 3.3 KiB {application} [built] [failed] [1 error]
+
+ERROR in ./app/javascript/packs/application.js
+Module build failed (from ./node_modules/babel-loader/lib/index.js):
+SyntaxError: /home/jaygreentree/Documents/GitHub/railsapp/app/javascript/packs/application.js: Missing semicolon (11:7)
+
+   9 | require("channels")
+  10 |
+> 11 | require jquery3
+     |        ^
+  12 | require bootstrap
+  13 |
+  14 | /* Bootstrap modules */
+    at Parser._raise (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:776:17)
+    at Parser.raiseWithData (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:769:17)
+    at Parser.raise (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:737:17)
+    at Parser.semicolon (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:9246:10)
+    at Parser.parseExpressionStatement (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:12397:10)
+    at Parser.parseStatementContent (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:11993:19)
+    at Parser.parseStatement (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:11857:17)
+    at Parser.parseBlockOrModuleBlockBody (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:12439:25)
+    at Parser.parseBlockBody (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:12430:10)
+    at Parser.parseTopLevel (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:11788:10)
+    at Parser.parse (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:13594:10)
+    at parse (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/parser/lib/index.js:13647:38)
+    at parser (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/core/lib/parser/index.js:54:34)
+    at parser.next (<anonymous>)
+    at normalizeFile (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/core/lib/transformation/normalize-file.js:99:38)
+    at normalizeFile.next (<anonymous>)
+    at run (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/core/lib/transformation/index.js:31:50)
+    at run.next (<anonymous>)
+    at Function.transform (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/core/lib/transform.js:27:41)
+    at transform.next (<anonymous>)
+    at step (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/gensync/index.js:261:32)
+    at /home/jaygreentree/Documents/GitHub/railsapp/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/gensync/index.js:223:11)
+    at /home/jaygreentree/Documents/GitHub/railsapp/node_modules/gensync/index.js:189:28
+    at /home/jaygreentree/Documents/GitHub/railsapp/node_modules/@babel/core/lib/gensync-utils/async.js:72:7
+    at /home/jaygreentree/Documents/GitHub/railsapp/node_modules/gensync/index.js:113:33
+    at step (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/gensync/index.js:287:14)
+    at /home/jaygreentree/Documents/GitHub/railsapp/node_modules/gensync/index.js:273:13
+    at async.call.result.err.err (/home/jaygreentree/Documents/GitHub/railsapp/node_modules/gensync/index.js:223:11)
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+npx browserslist@latest --update-db
+
+Why you should do it regularly:
+https://github.com/browserslist/browserslist#browsers-data-updating
+
+Completed 200 OK in 1618ms (Views: 1611.8ms | ActiveRecord: 0.5ms | Allocations: 85725)
+
+
+Started GET "/" for ::1 at 2021-12-10 18:53:57 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4469)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 25ms (Views: 19.6ms | ActiveRecord: 0.5ms | Allocations: 17257)
+
+
+Started GET "/" for ::1 at 2021-12-10 18:56:30 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 4043)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.5ms | ActiveRecord: 0.6ms | Allocations: 10694)
+
+
+Started GET "/about" for ::1 at 2021-12-10 18:57:00 -0500
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 5475)
+
+
+Started GET "/locations" for ::1 at 2021-12-10 18:57:05 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 5423)
+
+
+Started GET "/ministries" for ::1 at 2021-12-10 18:57:16 -0500
+Processing by MinistriesController#index as HTML
+  Rendering ministries/index.html.erb within layouts/application
+  Rendered ministries/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 5475)
+
+
+Started GET "/events" for ::1 at 2021-12-10 18:57:20 -0500
+  
+ActionController::RoutingError (uninitialized constant EventsController):
+  
+actionpack (6.0.4.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.4.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.4.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.4.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.4.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.10) lib/puma/configuration.rb:228:in `call'
+puma (4.3.10) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.10) lib/puma/server.rb:472:in `process_client'
+puma (4.3.10) lib/puma/server.rb:328:in `block in run'
+puma (4.3.10) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/watch" for ::1 at 2021-12-10 18:57:30 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/watch"):
+  
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.10) lib/puma/configuration.rb:228:in `call'
+puma (4.3.10) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.10) lib/puma/server.rb:472:in `process_client'
+puma (4.3.10) lib/puma/server.rb:328:in `block in run'
+puma (4.3.10) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/watch/index" for ::1 at 2021-12-10 19:31:29 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WatchController#index as HTML
+  Rendering watch/index.html.erb within layouts/application
+  Rendered watch/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 5438)
+
+
+Started GET "/watch" for ::1 at 2021-12-10 19:32:39 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WatchController#index as HTML
+  Rendering watch/index.html.erb within layouts/application
+  Rendered watch/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 4888)
+
+
+Started GET "/watch" for ::1 at 2021-12-11 02:06:57 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by WatchController#index as HTML
+  Rendering watch/index.html.erb within layouts/application
+  Rendered watch/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 4318)
+
+
+Started GET "/watch" for ::1 at 2021-12-11 02:07:13 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by WatchController#index as HTML
+  Rendering watch/index.html.erb within layouts/application
+  Rendered watch/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 12459)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:07:24 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4258)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 11.2ms | ActiveRecord: 0.5ms | Allocations: 10295)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:17:13 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4469)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 19.9ms | ActiveRecord: 0.6ms | Allocations: 17264)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:17:16 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 699)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 7.5ms | ActiveRecord: 0.1ms | Allocations: 5206)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:19:29 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 694)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.1ms | Allocations: 5183)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:21:53 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 873)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.1ms | Allocations: 9417)
+
+
+  
+ActionView::Template::Error (The asset "css/styles.css" is not present in the asset pipeline.
+):
+    11:         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    12:         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    13:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= stylesheet_link_tag 'css/styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+    15:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2021-12-11 02:21:59 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 696)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.1ms | Allocations: 5587)
+
+
+  
+ActionView::Template::Error (The asset "css/styles.css" is not present in the asset pipeline.
+):
+    11:         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    12:         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    13:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= stylesheet_link_tag 'css/styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+    15:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2021-12-11 02:22:13 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 873)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.1ms | Allocations: 11238)
+
+
+  
+ActionView::Template::Error (The asset "styles.css" is not present in the asset pipeline.
+):
+    11:         <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+    12:         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
+    13:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    14:     <%= stylesheet_link_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+    15:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    16:   </head>
+    17: 
+  
+app/views/layouts/application.html.erb:14
+Started GET "/" for ::1 at 2021-12-11 02:23:15 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 864)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 79.2ms | ActiveRecord: 0.1ms | Allocations: 45656)
+
+
+Started GET "/about" for ::1 at 2021-12-11 02:23:31 -0500
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 5424)
+
+
+Started GET "/about" for ::1 at 2021-12-11 02:27:37 -0500
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 64.8ms | ActiveRecord: 0.0ms | Allocations: 39492)
+
+
+Started GET "/about" for ::1 at 2021-12-11 02:28:38 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 12460)
+
+
+Started GET "/about" for ::1 at 2021-12-11 02:31:56 -0500
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 292)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 14.8ms | ActiveRecord: 0.0ms | Allocations: 12473)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:32:11 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.1ms | Allocations: 4258)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 11.9ms | ActiveRecord: 0.8ms | Allocations: 10287)
+
+
+Started GET "/about" for ::1 at 2021-12-11 02:37:06 -0500
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 76ms (Views: 74.8ms | ActiveRecord: 0.0ms | Allocations: 42817)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:37:11 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 611)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.2ms | Allocations: 4900)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:37:14 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 611)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.1ms | Allocations: 4860)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:41:57 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 698)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 5114)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:46:21 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4469)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 26ms (Views: 20.4ms | ActiveRecord: 0.5ms | Allocations: 17265)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:46:35 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 699)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.8ms | ActiveRecord: 0.1ms | Allocations: 5112)
+
+
+Started GET "/about" for ::1 at 2021-12-11 02:46:58 -0500
+Processing by AboutController#index as HTML
+  Rendering about/index.html.erb within layouts/application
+  Rendered about/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 5412)
+
+
+Started GET "/locations" for ::1 at 2021-12-11 02:47:09 -0500
+Processing by LocationsController#index as HTML
+  Rendering locations/index.html.erb within layouts/application
+  Rendered locations/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 5462)
+
+
+Started GET "/ministries" for ::1 at 2021-12-11 02:47:14 -0500
+Processing by MinistriesController#index as HTML
+  Rendering ministries/index.html.erb within layouts/application
+  Rendered ministries/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5469)
+
+
+Started GET "/events" for ::1 at 2021-12-11 02:47:19 -0500
+  
+ActionController::RoutingError (uninitialized constant EventsController):
+  
+actionpack (6.0.4.1) lib/action_dispatch/http/request.rb:92:in `rescue in controller_class_for'
+actionpack (6.0.4.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.4.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.4.1) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/cookies.rb:654:in `call'
+activerecord (6.0.4.1) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.4.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.4.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.4.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.4.1) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.4.1) lib/rails/engine.rb:527:in `call'
+puma (4.3.10) lib/puma/configuration.rb:228:in `call'
+puma (4.3.10) lib/puma/server.rb:718:in `handle_request'
+puma (4.3.10) lib/puma/server.rb:472:in `process_client'
+puma (4.3.10) lib/puma/server.rb:328:in `block in run'
+puma (4.3.10) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2021-12-11 02:56:17 -0500
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 4469)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 28.4ms | ActiveRecord: 0.5ms | Allocations: 19940)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:56:50 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 703)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.1ms | Allocations: 5518)
+
+
+Started GET "/" for ::1 at 2021-12-11 02:58:47 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 618)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 10ms (Views: 9.6ms | ActiveRecord: 0.1ms | Allocations: 5178)
+
+
+Started GET "/" for ::1 at 2021-12-11 03:00:19 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 611)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 66.3ms | ActiveRecord: 0.1ms | Allocations: 40819)
+
+
+Started GET "/" for ::1 at 2021-12-11 03:02:40 -0500
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.1ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 618)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 74ms (Views: 73.2ms | ActiveRecord: 0.1ms | Allocations: 41237)
+
+
+Started GET "/" for ::1 at 2021-12-11 03:08:26 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ArticlesController#index as HTML
+  Rendering articles/index.html.erb within layouts/application
+  [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+  ↳ app/views/articles/index.html.erb:4
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 647)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 68ms (Views: 67.0ms | ActiveRecord: 0.2ms | Allocations: 40049)
+
+

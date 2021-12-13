@@ -1,0 +1,54 @@
+I, [2021-12-11T03:20:45.455877 #73091]  INFO -- : [87180d06-9276-4347-813e-317f88d551b3] Started GET "/" for 127.0.0.1 at 2021-12-11 03:20:45 -0500
+I, [2021-12-11T03:20:45.457179 #73091]  INFO -- : [87180d06-9276-4347-813e-317f88d551b3] Processing by ArticlesController#index as HTML
+I, [2021-12-11T03:20:45.463151 #73091]  INFO -- : [87180d06-9276-4347-813e-317f88d551b3]   Rendering articles/index.html.erb within layouts/application
+D, [2021-12-11T03:20:45.465064 #73091] DEBUG -- : [87180d06-9276-4347-813e-317f88d551b3]   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2021-12-11T03:20:45.465613 #73091] DEBUG -- : [87180d06-9276-4347-813e-317f88d551b3]   [1m[36mArticle Load (0.2ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+I, [2021-12-11T03:20:45.465699 #73091]  INFO -- : [87180d06-9276-4347-813e-317f88d551b3]   Rendered articles/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1768)
+I, [2021-12-11T03:20:45.465834 #73091]  INFO -- : [87180d06-9276-4347-813e-317f88d551b3] Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.6ms | Allocations: 4567)
+F, [2021-12-11T03:20:45.466632 #73091] FATAL -- : [87180d06-9276-4347-813e-317f88d551b3]   
+[87180d06-9276-4347-813e-317f88d551b3] ActionView::Template::Error (SQLite3::SQLException: no such table: articles):
+[87180d06-9276-4347-813e-317f88d551b3]     1: <h1>Articles</h1>
+[87180d06-9276-4347-813e-317f88d551b3]     2: 
+[87180d06-9276-4347-813e-317f88d551b3]     3: <ul>
+[87180d06-9276-4347-813e-317f88d551b3]     4:   <% @articles.each do |article| %>
+[87180d06-9276-4347-813e-317f88d551b3]     5:     <li>
+[87180d06-9276-4347-813e-317f88d551b3]     6:       <%= article.title %>
+[87180d06-9276-4347-813e-317f88d551b3]     7:     </li>
+[87180d06-9276-4347-813e-317f88d551b3]   
+[87180d06-9276-4347-813e-317f88d551b3] app/views/articles/index.html.erb:4
+I, [2021-12-11T03:21:56.953334 #73229]  INFO -- : [78a6bf89-eac9-4348-be25-d5594ecac57f] Started GET "/" for 127.0.0.1 at 2021-12-11 03:21:56 -0500
+I, [2021-12-11T03:21:56.954678 #73229]  INFO -- : [78a6bf89-eac9-4348-be25-d5594ecac57f] Processing by ArticlesController#index as HTML
+I, [2021-12-11T03:21:56.960311 #73229]  INFO -- : [78a6bf89-eac9-4348-be25-d5594ecac57f]   Rendering articles/index.html.erb within layouts/application
+D, [2021-12-11T03:21:56.962009 #73229] DEBUG -- : [78a6bf89-eac9-4348-be25-d5594ecac57f]   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2021-12-11T03:21:56.962639 #73229] DEBUG -- : [78a6bf89-eac9-4348-be25-d5594ecac57f]   [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+I, [2021-12-11T03:21:56.962749 #73229]  INFO -- : [78a6bf89-eac9-4348-be25-d5594ecac57f]   Rendered articles/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1769)
+I, [2021-12-11T03:21:56.962913 #73229]  INFO -- : [78a6bf89-eac9-4348-be25-d5594ecac57f] Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.6ms | Allocations: 4569)
+F, [2021-12-11T03:21:56.963712 #73229] FATAL -- : [78a6bf89-eac9-4348-be25-d5594ecac57f]   
+[78a6bf89-eac9-4348-be25-d5594ecac57f] ActionView::Template::Error (SQLite3::SQLException: no such table: articles):
+[78a6bf89-eac9-4348-be25-d5594ecac57f]     1: <h1>Articles</h1>
+[78a6bf89-eac9-4348-be25-d5594ecac57f]     2: 
+[78a6bf89-eac9-4348-be25-d5594ecac57f]     3: <ul>
+[78a6bf89-eac9-4348-be25-d5594ecac57f]     4:   <% @articles.each do |article| %>
+[78a6bf89-eac9-4348-be25-d5594ecac57f]     5:     <li>
+[78a6bf89-eac9-4348-be25-d5594ecac57f]     6:       <%= article.title %>
+[78a6bf89-eac9-4348-be25-d5594ecac57f]     7:     </li>
+[78a6bf89-eac9-4348-be25-d5594ecac57f]   
+[78a6bf89-eac9-4348-be25-d5594ecac57f] app/views/articles/index.html.erb:4
+I, [2021-12-11T03:22:26.781536 #73360]  INFO -- : [4031abfb-6895-451a-8ecc-6e791149ee02] Started GET "/" for 127.0.0.1 at 2021-12-11 03:22:26 -0500
+I, [2021-12-11T03:22:26.783031 #73360]  INFO -- : [4031abfb-6895-451a-8ecc-6e791149ee02] Processing by ArticlesController#index as HTML
+I, [2021-12-11T03:22:26.789231 #73360]  INFO -- : [4031abfb-6895-451a-8ecc-6e791149ee02]   Rendering articles/index.html.erb within layouts/application
+D, [2021-12-11T03:22:26.791865 #73360] DEBUG -- : [4031abfb-6895-451a-8ecc-6e791149ee02]   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+D, [2021-12-11T03:22:26.792533 #73360] DEBUG -- : [4031abfb-6895-451a-8ecc-6e791149ee02]   [1m[36mArticle Load (0.3ms)[0m  [1m[34mSELECT "articles".* FROM "articles"[0m
+I, [2021-12-11T03:22:26.792649 #73360]  INFO -- : [4031abfb-6895-451a-8ecc-6e791149ee02]   Rendered articles/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1768)
+I, [2021-12-11T03:22:26.792828 #73360]  INFO -- : [4031abfb-6895-451a-8ecc-6e791149ee02] Completed 500 Internal Server Error in 10ms (ActiveRecord: 1.0ms | Allocations: 4568)
+F, [2021-12-11T03:22:26.794033 #73360] FATAL -- : [4031abfb-6895-451a-8ecc-6e791149ee02]   
+[4031abfb-6895-451a-8ecc-6e791149ee02] ActionView::Template::Error (SQLite3::SQLException: no such table: articles):
+[4031abfb-6895-451a-8ecc-6e791149ee02]     1: <h1>Articles</h1>
+[4031abfb-6895-451a-8ecc-6e791149ee02]     2: 
+[4031abfb-6895-451a-8ecc-6e791149ee02]     3: <ul>
+[4031abfb-6895-451a-8ecc-6e791149ee02]     4:   <% @articles.each do |article| %>
+[4031abfb-6895-451a-8ecc-6e791149ee02]     5:     <li>
+[4031abfb-6895-451a-8ecc-6e791149ee02]     6:       <%= article.title %>
+[4031abfb-6895-451a-8ecc-6e791149ee02]     7:     </li>
+[4031abfb-6895-451a-8ecc-6e791149ee02]   
+[4031abfb-6895-451a-8ecc-6e791149ee02] app/views/articles/index.html.erb:4
