@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   root "articles#index"
   get "/about", to: "about#index"
   get "/about/team", to: "about#team"
@@ -17,6 +18,6 @@ Rails.application.routes.draw do
   get "/articles/:id", to: "articles#show"
   get "/sermons", to: "sermons#index"
   get 'grayscale/index', to: "grayscale#index"
-  get "/watch", to: "watch#index"
+  get 'watch/index', to "watch#index"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
