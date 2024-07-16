@@ -1,7 +1,8 @@
 # railsapp
 
-Run these commands
-```bundle install && rails serve```
+Run these commands <br>
+```bundle install``` <br>
+```rails serve``` <br>
 
 # TODO
 Finish sermons & watch pages
